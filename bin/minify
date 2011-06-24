@@ -1,0 +1,37 @@
+#!/usr/bin/env ruby
+
+require 'rubygems'
+require 'cssmin'
+require 'jsmin'
+
+file = ARGV[0]
+
+unless file.empty?
+  path = File.dirname(file)
+  filename = File.basename(file)
+  
+  puts "minifying #{filename} in #{path}"
+
+  content = File.read(file)
+
+  # write backup file
+  File.open("#{file}.bak", "w+") do |new_file|
+    new_file.write(content)
+  end
+
+  filetype = File.extname(file)
+
+  if ".js" == filetype
+    content = JSMin.minify(content)
+  elsif ".css" == filetype
+    content = CSSMin.minify(content)
+  end
+
+  # write new file
+  File.open(file, "w") do |new_file|
+    new_file.write(content)
+  end
+else
+  puts "please specifiy a filename ..."
+end
+
