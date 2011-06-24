@@ -28,3 +28,6 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 
 export PATH=$PATH:$HOME/.home/bin
+
+# fortune cookie ;-)
+fortune

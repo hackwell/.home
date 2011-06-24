@@ -1,0 +1,3 @@
+#!/bin/bash
+
+svn status . | grep ".php" | awk '{print $2}' | xargs phpcs --standard=Zend
