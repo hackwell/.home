@@ -32,5 +32,8 @@ source $ZSH/oh-my-zsh.sh
 export DOT_HOME=$HOME/.home
 export PATH=$PATH:$DOT_HOME/bin
 
+# set environment variables ...
+source $DOT_HOME/.environment_variables
+
 # fortune cookie ;-)
 source $DOT_HOME/.fortune
