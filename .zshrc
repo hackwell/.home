@@ -21,13 +21,16 @@ export ZSH_THEME="cloud"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+plugins=(git textmate)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
-export PATH=$PATH:$HOME/.home/bin
 
 # fortune cookie ;-)
-fortune
+export DOT_HOME=$HOME/.home
+export PATH=$PATH:$DOT_HOME/bin
+
+# fortune cookie ;-)
+source $DOT_HOME/.fortune
