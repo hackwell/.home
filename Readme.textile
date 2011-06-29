@@ -1,1 +1,13 @@
 This is my home dir, settings for zsh, dot files and so on ...
+
+h1. Installation
+
+Installation is very simple, you just have to clone this repository to your home dir:
+
+@git clone git@github.com:domnikl/.home.git $HOME/.home@
+
+cd into the newly created directory and run install.sh
+
+@cd $HOME/.home && ./install.sh@
+
+.home will then clone the oh-my-zsh repository and create a symlink in your home dir .zshrc to adjust $PATH as well as set zsh preferences.
