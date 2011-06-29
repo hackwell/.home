@@ -4,7 +4,7 @@ h1. Installation
 
 Installation is very simple, you just have to clone this repository to your home dir:
 
-@git clone git\@github.com:domnikl/.home.git $HOME/.home@
+@git clone git://github.com/domnikl/.home.git $HOME/.home@
 
 cd into the newly created directory and run install.sh
 
