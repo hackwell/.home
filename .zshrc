@@ -32,3 +32,5 @@ export PATH=$PATH:$DOT_HOME/bin
 
 # fortune cookie ;-)
 source $DOT_HOME/.fortune
+
+source $DOT_HOME/.macports
