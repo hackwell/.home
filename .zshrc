@@ -39,3 +39,9 @@ source $DOT_HOME/.environment_variables
 source $DOT_HOME/.fortune
 
 source $DOT_HOME/.macports
+
+# add a local .local.zshrc file, if it exists
+if [ -f "$HOME/.local.zshrc" ]; then
+	source $HOME/.local.zshrc
+fi
+
