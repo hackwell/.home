@@ -5,7 +5,9 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-export ZSH_THEME="miloshadzic"
+
+# disabled due to custom theme
+# export ZSH_THEME="domnikl"
 
 # Set to this to use case-sensitive completion
 # export CASE_SENSITIVE="true"
@@ -32,6 +34,9 @@ if [ -d "$HOME/bin" ]; then
 	export PATH=$PATH:$HOME/bin
 fi
 
+# load custom theme
+source $DOT_HOME/themes/domnikl.zsh-theme
+
 # set environment variables ...
 source $DOT_HOME/.environment_variables
 
@@ -44,4 +49,3 @@ source $DOT_HOME/.macports
 if [ -f "$HOME/.local.zshrc" ]; then
 	source $HOME/.local.zshrc
 fi
-
