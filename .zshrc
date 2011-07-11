@@ -7,7 +7,7 @@ export ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 
 # disabled due to custom theme
-# export ZSH_THEME="domnikl"
+export ZSH_THEME=""
 
 # Set to this to use case-sensitive completion
 # export CASE_SENSITIVE="true"

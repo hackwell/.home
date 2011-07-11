@@ -11,3 +11,6 @@ if [ "$UID" = "0" ]; then
 fi
 
 PROMPT="$IAM%{$fg[cyan]%}%1~%{$reset_color%}%{$fg[red]%}|%{$reset_color%}$(git_prompt_info)%{$fg[cyan]%}⇒%{$reset_color%} "
+
+# LS colors, made with http://geoff.greer.fm/lscolors/
+export LSCOLORS='Gxdxhxhxbxegedabagacad'
