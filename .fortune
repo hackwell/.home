@@ -1,8 +1,8 @@
 #!/bin/bash
 
-FORTUNE=`hash fortune 2>&1`
+FORTUNE=`which fortune 2>&1`
 
-if [[ $FORTUNE != *"no such command"* ]]
+if [[ $FORTUNE != *"not found"* ]]
 then
-	fortune
+	fortune ~/.home/fortunes/my_fortunes
 fi
