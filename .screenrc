@@ -1,0 +1,28 @@
+# common
+nethack 	on
+autodetach	on
+hardcopy_append	on
+vbell		on
+startup_message off
+silencewait	5
+defscrollback	1024
+shell 		zsh
+
+sorendition	rw
+hardstatus	alwayslastline "%{.w} %c | %H LOAD: %1 | %{wb} %w %{= dd}"
+
+activity		"^Gactivity in %n (%t) [%w:%s]~"
+bell_msg		"bell in %n!"
+vbell_msg		"   Wuff  ----  Wuff!!  "
+
+setenv SSH_AUTH_SOCK $HOME/.screen-ssh-agent
+
+sessionname $HOST
+
+# screens
+screen -t SHELL 0 zsh
+screen -t SHELL 1 zsh
+screen -t SHELL 2 zsh
+
+select 0
+
