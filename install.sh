@@ -35,5 +35,11 @@ if [ ! -f "$LOCAL_SETTINGS" ]; then
 	echo $OK_FLAG
 fi
 
+if [ ! -f "$HOME/.screenrc" ]; then
+	echo -n "creating $HOME/.screenrc for screen settings ... "
+	ln -s $WD/.screenrc $HOME/.screenrc
+	echo $OK_FLAG
+fi
+
 echo ""
 echo " => now run 'chsh -s $ZSH_PATH' to change your used shell to activate settings"

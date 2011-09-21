@@ -34,6 +34,9 @@ if [ -d "$HOME/bin" ]; then
 	export PATH=$PATH:$HOME/bin
 fi
 
+# aliases
+source $DOT_HOME/.aliases
+
 # load custom theme
 source $DOT_HOME/themes/domnikl.zsh-theme
 
