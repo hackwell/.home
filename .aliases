@@ -1,3 +1,6 @@
 alias attach='screen -U -d -R'
 
 alias l='ls -lah'
+
+# ack is http://betterthangrep.com
+alias ack='ack-grep'
