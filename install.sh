@@ -41,5 +41,15 @@ if [ ! -f "$HOME/.screenrc" ]; then
 	echo $OK_FLAG
 fi
 
+# install ssh blacklisting tool
+if [ ! -f "$HOME/bin/sshblack" ]; then
+	echo -n "setting new symlink for sshblack"
+	ln -s $WD/bin/sshblack $HOME/sshblack
+	echo $OK_FLAG
+
+	echo "running sshblack for the first time"
+	sudo $WD/bin/sshblack/sshblack.pl
+fi
+
 echo ""
 echo " => now run 'chsh -s $ZSH_PATH' to change your used shell to activate settings"
