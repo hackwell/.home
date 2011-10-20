@@ -12,7 +12,9 @@ if [ "$UID" = "0" ]; then
 	IAM="%{$fg[red]%}root|%{$reset_color%}"
 fi
 
-PROMPT='$IAM%{$fg[cyan]%}%1~%{$reset_color%}%{$fg[red]%}|%{$reset_color%}$(git_prompt_info)%{$fg[cyan]%}⇒%{$reset_color%} '
+SEPARATOR="%{$fg[red]%}|%{$fg[reset_color]%}"
+
+PROMPT='%{$fg[yellow]%}$HOST$SEPARATOR$IAM%{$fg[cyan]%}%1~%{$reset_color%}$SEPARATOR$(git_prompt_info)%{$fg[cyan]%}%{$reset_color%} '
 
 # ls colors, made with http://geoff.greer.fm/lscolors/
 export LSCOLORS='Gxdxhxhxbxegedabagacad'
