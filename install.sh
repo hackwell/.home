@@ -35,6 +35,7 @@ if [ ! -f "$LOCAL_SETTINGS" ]; then
 	echo $OK_FLAG
 fi
 
+# sym link for .screenrc file
 if [ ! -f "$HOME/.screenrc" ]; then
 	echo -n "creating $HOME/.screenrc for screen settings ... "
 	ln -s $WD/.screenrc $HOME/.screenrc
