@@ -35,10 +35,21 @@ if [ ! -f "$LOCAL_SETTINGS" ]; then
 	echo $OK_FLAG
 fi
 
+# sym link for .screenrc file
 if [ ! -f "$HOME/.screenrc" ]; then
 	echo -n "creating $HOME/.screenrc for screen settings ... "
 	ln -s $WD/.screenrc $HOME/.screenrc
 	echo $OK_FLAG
+fi
+
+# install ssh blacklisting tool
+if [ ! -f "$HOME/bin/sshblack" ]; then
+	echo -n "setting new symlink for sshblack"
+	ln -s $WD/bin/sshblack $HOME/sshblack
+	echo $OK_FLAG
+
+	echo "running sshblack for the first time"
+	sudo $WD/bin/sshblack/sshblack.pl
 fi
 
 echo ""
