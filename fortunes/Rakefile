@@ -1,0 +1,5 @@
+task :default => 'create'
+
+task :create do
+  sh 'strfile my_fortunes my_fortunes.dat'
+end
