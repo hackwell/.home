@@ -1,8 +1,0 @@
-#!/bin/bash
-
-FORTUNE=`which fortune 2>&1`
-
-if [[ $FORTUNE != *"not found"* ]]
-then
-	fortune ~/.home/fortunes/my_fortunes
-fi

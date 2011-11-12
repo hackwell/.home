@@ -23,7 +23,7 @@ export ZSH_THEME=""
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git textmate)
+plugins=(git textmate ant autojump brew osx vagrant)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -38,15 +38,11 @@ fi
 source $DOT_HOME/.aliases
 
 # load custom theme
-source $DOT_HOME/themes/domnikl.zsh-theme
+source $DOT_HOME/themes/hackwell.zsh-theme
 
 # set environment variables ...
 source $DOT_HOME/.environment_variables
 
-# fortune cookie ;-)
-source $DOT_HOME/.fortune
-
-source $DOT_HOME/.macports
 
 # add a local .local.zshrc file, if it exists
 if [ -f "$HOME/.local.zshrc" ]; then

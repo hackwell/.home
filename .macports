@@ -1,5 +1,0 @@
-#!/bin/bash
-
-if [ -d "/opt" ]; then
-	export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-fi
